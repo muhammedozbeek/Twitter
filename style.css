@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.left,
+.right {
+  float: right;
+  height: 96%;
+}
+
+.left {
+  display: flex;
+  background: url(background.png);
+  background-position: center;
+  background-size: cover;
+  width: 54%;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  background: white;
+  width: 46%;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.left img {
+  width: 400px;
+}
+
+.right img {
+  width: 45px;
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.right h1 {
+  width: 500px;
+  margin-top: 30px;
+  font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 64px;
+}
+.right h2 {
+  width: 500px;
+  margin-top: 40px;
+  font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 31px;
+  margin-bottom: 25px;
+}
+button {
+  display: block;
+  width: 300px;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #999;
+  font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.google img {
+  background-color: transparent;
+  width: 22px;
+  margin: 0;
+  padding-right: 8px;
+}
+
+.apple {
+  font-weight: bold;
+}
+
+.apple:hover {
+  background-color: #ece6e6;
+}
+
+.apple img {
+  background-color: white;
+  width: 25px;
+  margin: 0;
+  padding-right: 8px;
+}
+
+.veya {
+  color: black;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+hr {
+  display: inline-block;
+  width: 125px;
+  opacity: 0.3;
+}
+
+.hesap {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  margin-top: 11px;
+  border: 0px solid transparent;
+  font-weight: bold;
+}
+
+.hesap:hover {
+  background-color: rgb(35, 131, 196);
+}
+
+.yazi {
+  line-height: 12px;
+  font-size: 12px;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.yazi a {
+  text-decoration: none;
+  color: rgb(29, 155, 240);
+}
+
+.yazi a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+.giris {
+  color: rgb(44, 137, 200);
+  margin-top: 15px;
+}
+.giris:hover {
+  background-color: rgb(194, 255, 245);
+}
+
+footer {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  padding-top: 11px;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 14px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  display: inline-block;
+}
+@media (max-width: 1000px) {
+  .left,
+  .right {
+    float: none;
+    width: 100%;
+  }
+
+  .right {
+    padding: 0px 13% 0px 25%;
+  }
+
+  .right img {
+    margin-top: 20px;
+  }
+
+  .left {
+    height: 40%;
+  }
+
+  .left img {
+    width: 340px;
+  }
+
+  .right h1 {
+    font-size: 50px;
+  }
+
+  .right h2 {
+    font-size: 25px;
+  }
+
+  .google img {
+    margin-top: 5px;
+  }
+
+  .apple img {
+    margin-top: 5px;
+  }
+  .right h3 {
+    margin-top: 10px;
+  }
+  footer {
+    position: relative;
+    height: 80px;
+  }
+}
